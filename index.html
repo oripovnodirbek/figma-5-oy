@@ -1,23 +1,30 @@
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark/Light Mode</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Image Overlay with Dark/Light Mode and Language Switch</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <button id="modeToggle">Dark Mode</button>
+        <button id="modeToggle" class="mode-toggle">
+            <span class="mode-icon">🌙</span>
+        </button>
     </header>
     <div class="container">
-        <div class="first-div">
+        <div class="image-container">
+            <figure>
+                <img src="./DARK (1).svg"  class="image" id="image1">
+                <figcaption id="caption1">English</figcaption>
+            </figure>
+            <figure>
+                <img src="./power.svg"  class="image" id="image2">
+                <figcaption id="caption2">English</figcaption>
+            </figure>
         </div>
-        <div class="second-div">
-            <img src="./images/DARK (1).svg" >
-            <img src="./images/power.svg" >
-        </div>
+        <button id="languageToggle" class="language-toggle">Change Language</button>
     </div>
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
